@@ -24,7 +24,10 @@ final class AppCoordinator: Coordinator {
     }
 
     func start() {
-        let controller = HomeController(viewModel: HomeControllerViewModel())
+        let controller = HomeController(viewModel: HomeControllerViewModel(
+            readService: ReadService(),
+            parseService: ParseService()
+        ))
 
         setViewController(controller)
     }

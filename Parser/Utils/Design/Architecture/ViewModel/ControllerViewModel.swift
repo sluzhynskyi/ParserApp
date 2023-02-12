@@ -12,3 +12,7 @@ protocol ControllerViewModel: ViewModel { }
 protocol ViewModel: Applyable {
     func configure()
 }
+
+extension ViewModel {
+    func configure() { }
+}

@@ -19,5 +19,9 @@ enum GlobalConstants {
     static var appName: String {
         "Parser"
     }
+
+    static var resourceDB: (name: String, type: String) {
+        ("task", "json")
+    }
 }
 

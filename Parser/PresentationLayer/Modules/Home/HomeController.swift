@@ -20,6 +20,20 @@ final class HomeController: Controller<
     
     // MARK: - Properties
     // MARK: Views
+
+    private(set) lazy var tableView = UITableView {
+        $0.backgroundColor = .clear
+        $0.backgroundView?.backgroundColor = .clear
+        $0.separatorStyle = .none
+        $0.translatesAutoresizingMaskIntoConstraints = false
+    }
+
+    // MARK: - Provider
+
+    private(set) lazy var contentProvider = PagesTableViewProvider(
+        tableView: tableView,
+        viewModel: viewModel
+    )
     
     
     // MARK: - Lifecycle
@@ -27,7 +41,8 @@ final class HomeController: Controller<
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+//        view.backgroundColor = .blue
+
     }
     
     
@@ -37,6 +52,11 @@ final class HomeController: Controller<
     override func configureView() { 
         super.configureView()
 
+        configureContentProvider()
+    }
+
+    private func configureContentProvider() {
+        contentProvider.reloadData()
     }
     
     // MARK: - ViewModel
@@ -45,6 +65,6 @@ final class HomeController: Controller<
     override func configureViewModel() { 
         super.configureViewModel()
         
-        
+        viewModel.loadContent()
     }
 }

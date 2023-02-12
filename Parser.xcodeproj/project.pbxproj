@@ -33,6 +33,18 @@
 		15309A4D2995A8770096529F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15309A3C2995A8770096529F /* View.swift */; };
 		15E5573E2995BDDD006D55AD /* task.json in Resources */ = {isa = PBXBuildFile; fileRef = 15E5573D2995BDDD006D55AD /* task.json */; };
 		15E557422995C04A006D55AD /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E557412995C04A006D55AD /* ImagePage.swift */; };
+		15E557472995C513006D55AD /* ReadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E557462995C513006D55AD /* ReadService.swift */; };
+		15E5574B2995C741006D55AD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5574A2995C741006D55AD /* Data.swift */; };
+		15E5574E2995C972006D55AD /* ParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5574D2995C972006D55AD /* ParseService.swift */; };
+		15E5575129997776006D55AD /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575029997776006D55AD /* TableViewProvider.swift */; };
+		15E55753299977E9006D55AD /* PagesTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E55752299977E9006D55AD /* PagesTableViewProvider.swift */; };
+		15E5575729997B28006D55AD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575629997B28006D55AD /* TableViewCell.swift */; };
+		15E5575929997B55006D55AD /* TableLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575829997B55006D55AD /* TableLayoutCell.swift */; };
+		15E5575C29997BB1006D55AD /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575B29997BB1006D55AD /* Reusable.swift */; };
+		15E5575E29997C24006D55AD /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575D29997C24006D55AD /* PageCell.swift */; };
+		15E5576229997C41006D55AD /* PageCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5576129997C41006D55AD /* PageCellLayout.swift */; };
+		15E5576429997D95006D55AD /* PageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5576329997D95006D55AD /* PageCellViewModel.swift */; };
+		15E5576629997EDA006D55AD /* ReusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5576529997EDA006D55AD /* ReusableTableView.swift */; };
 		437522D77A44645D9E6000D3 /* Pods_Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1028B61322277E6A5DA78CBB /* Pods_Parser.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +78,18 @@
 		15309A3C2995A8770096529F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		15E5573D2995BDDD006D55AD /* task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = task.json; sourceTree = "<group>"; };
 		15E557412995C04A006D55AD /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePage.swift; path = ../../../../../ImagePage.swift; sourceTree = "<group>"; };
+		15E557462995C513006D55AD /* ReadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadService.swift; sourceTree = "<group>"; };
+		15E5574A2995C741006D55AD /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		15E5574D2995C972006D55AD /* ParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseService.swift; sourceTree = "<group>"; };
+		15E5575029997776006D55AD /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		15E55752299977E9006D55AD /* PagesTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewProvider.swift; sourceTree = "<group>"; };
+		15E5575629997B28006D55AD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		15E5575829997B55006D55AD /* TableLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCell.swift; sourceTree = "<group>"; };
+		15E5575B29997BB1006D55AD /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		15E5575D29997C24006D55AD /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		15E5576129997C41006D55AD /* PageCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCellLayout.swift; sourceTree = "<group>"; };
+		15E5576329997D95006D55AD /* PageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCellViewModel.swift; sourceTree = "<group>"; };
+		15E5576529997EDA006D55AD /* ReusableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableView.swift; sourceTree = "<group>"; };
 		71A03AAD7F8135C0F4CA6C55 /* Pods-Parser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parser.debug.xcconfig"; path = "Target Support Files/Pods-Parser/Pods-Parser.debug.xcconfig"; sourceTree = "<group>"; };
 		D8C020B5E184086F17D7060F /* Pods-Parser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parser.release.xcconfig"; path = "Target Support Files/Pods-Parser/Pods-Parser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,9 +229,11 @@
 		15309A232995A8760096529F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				15E5575429997AC8006D55AD /* Cell */,
 				15309A242995A8760096529F /* HomeController.swift */,
-				15309A252995A8760096529F /* HomeControllerLayout.swift */,
+				15E55752299977E9006D55AD /* PagesTableViewProvider.swift */,
 				15309A262995A8760096529F /* HomeControllerViewModel.swift */,
+				15309A252995A8760096529F /* HomeControllerLayout.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -215,6 +241,7 @@
 		15309A272995A8770096529F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				15E557482995C72B006D55AD /* Extensions */,
 				15309A282995A8770096529F /* Design */,
 			);
 			path = Utils;
@@ -229,6 +256,9 @@
 				15309A342995A8770096529F /* Architecture */,
 				15309A392995A8770096529F /* ViewStyle */,
 				15309A3B2995A8770096529F /* Views */,
+				15E5574F29997756006D55AD /* Providers */,
+				15E5575529997B0C006D55AD /* Cells */,
+				15E5575A29997BA1006D55AD /* Reusable */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -330,8 +360,70 @@
 		15E557442995C2B0006D55AD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				15E5574C2995C90C006D55AD /* Parse */,
+				15E557452995C4C7006D55AD /* Read */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		15E557452995C4C7006D55AD /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				15E557462995C513006D55AD /* ReadService.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		15E557482995C72B006D55AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15E5574A2995C741006D55AD /* Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15E5574C2995C90C006D55AD /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				15E5574D2995C972006D55AD /* ParseService.swift */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		15E5574F29997756006D55AD /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				15E5575029997776006D55AD /* TableViewProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		15E5575429997AC8006D55AD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15E5575D29997C24006D55AD /* PageCell.swift */,
+				15E5576329997D95006D55AD /* PageCellViewModel.swift */,
+				15E5576129997C41006D55AD /* PageCellLayout.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		15E5575529997B0C006D55AD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				15E5575629997B28006D55AD /* TableViewCell.swift */,
+				15E5575829997B55006D55AD /* TableLayoutCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		15E5575A29997BA1006D55AD /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				15E5575B29997BB1006D55AD /* Reusable.swift */,
+				15E5576529997EDA006D55AD /* ReusableTableView.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		6390DE0C9A787205D4209323 /* Frameworks */ = {
@@ -449,23 +541,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				15309A182995A7F60096529F /* AppCoordinator.swift in Sources */,
+				15E5575C29997BB1006D55AD /* Reusable.swift in Sources */,
+				15E557472995C513006D55AD /* ReadService.swift in Sources */,
+				15E5576429997D95006D55AD /* PageCellViewModel.swift in Sources */,
 				15309A422995A8770096529F /* NavigationController.swift in Sources */,
 				15309A432995A8770096529F /* LayoutControl.swift in Sources */,
+				15E5575929997B55006D55AD /* TableLayoutCell.swift in Sources */,
+				15E5575E29997C24006D55AD /* PageCell.swift in Sources */,
 				15309A462995A8770096529F /* ViewLayout.swift in Sources */,
 				15309A492995A8770096529F /* Button.swift in Sources */,
+				15E5574B2995C741006D55AD /* Data.swift in Sources */,
 				15309A4B2995A8770096529F /* Controller.swift in Sources */,
 				15309A482995A8770096529F /* Control.swift in Sources */,
+				15E5575729997B28006D55AD /* TableViewCell.swift in Sources */,
 				15309A4C2995A8770096529F /* ViewStyle.swift in Sources */,
 				15309A4D2995A8770096529F /* View.swift in Sources */,
 				15309A132995A7890096529F /* Closures.swift in Sources */,
 				15309A4A2995A8770096529F /* ControllerViewModel.swift in Sources */,
+				15E5576629997EDA006D55AD /* ReusableTableView.swift in Sources */,
 				15309A3E2995A8770096529F /* ColorPalette.swift in Sources */,
 				15309A402995A8770096529F /* HomeControllerLayout.swift in Sources */,
 				15309A152995A79C0096529F /* GlobalConstants.swift in Sources */,
+				15E5575129997776006D55AD /* TableViewProvider.swift in Sources */,
+				15E55753299977E9006D55AD /* PagesTableViewProvider.swift in Sources */,
 				15309A3F2995A8770096529F /* HomeController.swift in Sources */,
 				153099AD2995A35F0096529F /* Application.swift in Sources */,
 				15309A412995A8770096529F /* HomeControllerViewModel.swift in Sources */,
+				15E5576229997C41006D55AD /* PageCellLayout.swift in Sources */,
 				15309A112995A7660096529F /* Appyable.swift in Sources */,
+				15E5574E2995C972006D55AD /* ParseService.swift in Sources */,
 				15309A442995A8770096529F /* LayoutContentView.swift in Sources */,
 				15E557422995C04A006D55AD /* ImagePage.swift in Sources */,
 				15309A1A2995A80B0096529F /* Coordinator.swift in Sources */,
