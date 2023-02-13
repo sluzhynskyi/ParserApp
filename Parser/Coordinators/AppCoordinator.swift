@@ -15,10 +15,10 @@ final class AppCoordinator: Coordinator {
     init(
         navigationController: UINavigationController = NavigationViewController()
     ) {
-        navigationController.setNavigationBarHidden(
-            true,
-            animated: false
-        )
+//        navigationController.setNavigationBarHidden(
+//            true,
+//            animated: false
+//        )
 
         self.navigationController = navigationController
     }
@@ -27,8 +27,25 @@ final class AppCoordinator: Coordinator {
         let controller = HomeController(viewModel: HomeControllerViewModel(
             readService: ReadService(),
             parseService: ParseService()
-        ))
+        )).apply {
+            $0.willShowPageAction = { [weak self] content in
+                self?.willOpenPageController(content)
+            }
+        }
 
         setViewController(controller)
+    }
+
+    func willOpenPageController(_ content: ImagePage) {
+        var controller = PageViewController(
+            viewModel: PageViewControllerViewModel(
+                content: content,
+                downloadService: DownloadService()
+            )
+        )
+
+        controller.viewModel.loadContent { [weak self] in
+            self?.navigationController.pushViewController(controller, animated: true)
+        }
     }
 }

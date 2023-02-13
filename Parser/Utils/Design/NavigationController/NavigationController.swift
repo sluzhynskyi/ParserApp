@@ -22,7 +22,7 @@ class NavigationViewController:
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        clearNavigationBar()
+        defaultNavigationBar()
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -37,11 +37,17 @@ class NavigationViewController:
     }
 
     func defaultNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+
         navigationBar.tintColor = .black
         navigationBar.backgroundColor = .white
         navigationBar.barTintColor = .white
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         navigationBar.isTranslucent = false
+        appearance.backgroundColor = .white
+        navigationBar.standardAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
     }
 
     func clearNavigationBar() {

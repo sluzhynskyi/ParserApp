@@ -11,11 +11,18 @@ final class PagesTableViewProvider: TableViewProvider<
     UITableView,
     HomeControllerViewModel
 > {
+    // MARK: - Types
+
+    typealias WillShowPageAction = (_ content: ImagePage) -> Void
 
     // MARK: - Properties
     // MARK: Content
 
     var itemHeight: CGFloat { 80 }
+
+    // MARK: - CallBack
+
+    var willShowPageAction: WillShowPageAction?
 
 
     // MARK: - Configuration
@@ -66,7 +73,8 @@ final class PagesTableViewProvider: TableViewProvider<
             tableView.deselectRow(at: indexPath, animated: true)
         }
 
-        reloadData()
+        let item = viewModel.item(at: indexPath.row)
+        willShowPageAction?(item.content)
     }
 
     override func tableView(

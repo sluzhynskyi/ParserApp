@@ -13,12 +13,15 @@ final class HomeController: Controller<
 > {
     // MARK: - Types
 
-    enum MyError: Error {
-        case anError
-    }
+        // MARK: - Types
 
+    typealias Provider = PagesTableViewProvider
     
     // MARK: - Properties
+    // MARK: Callbacks
+
+    var willShowPageAction: Provider.WillShowPageAction?
+
     // MARK: Views
 
     private(set) lazy var tableView = UITableView {
@@ -40,9 +43,8 @@ final class HomeController: Controller<
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        view.backgroundColor = .blue
 
+        view.backgroundColor = .white
     }
     
     
@@ -57,6 +59,10 @@ final class HomeController: Controller<
 
     private func configureContentProvider() {
         contentProvider.reloadData()
+
+        contentProvider.willShowPageAction = { [unowned self] content in
+            self.willShowPageAction?(content)
+        }
     }
     
     // MARK: - ViewModel
