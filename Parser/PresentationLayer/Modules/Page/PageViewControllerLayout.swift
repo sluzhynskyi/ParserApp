@@ -19,7 +19,7 @@ struct PageViewControllerLayout: ViewLayout {
     func process() {
         [root.scrollView].forEach(root.view.addSubview(_:))
         [root.contentView].forEach(root.scrollView.addSubview(_:))
-        [root.firstImageView, root.secondImageView, root.thirdImageView].forEach(root.contentView.addSubview(_:))
+        [root.titleLabel, root.detailsLabel, root.firstImageView, root.secondImageView, root.thirdImageView].forEach(root.contentView.addSubview(_:))
 
         let constraints = [
             root.scrollView.topAnchor.constraint(equalTo: root.view.safeAreaLayoutGuide.topAnchor, constant: 16),
@@ -32,7 +32,15 @@ struct PageViewControllerLayout: ViewLayout {
             root.contentView.widthAnchor.constraint(equalTo: root.scrollView.widthAnchor),
             root.contentView.bottomAnchor.constraint(equalTo: root.scrollView.bottomAnchor),
 
-            root.firstImageView.topAnchor.constraint(equalTo: root.contentView.topAnchor),
+            root.titleLabel.topAnchor.constraint(equalTo: root.contentView.topAnchor),
+            root.titleLabel.leadingAnchor.constraint(equalTo: root.contentView.leadingAnchor, constant: 10),
+            root.titleLabel.trailingAnchor.constraint(equalTo: root.contentView.trailingAnchor, constant: -10),
+
+            root.detailsLabel.topAnchor.constraint(equalTo: root.titleLabel.bottomAnchor, constant: 10),
+            root.detailsLabel.leadingAnchor.constraint(equalTo: root.contentView.leadingAnchor, constant: 10),
+            root.detailsLabel.trailingAnchor.constraint(equalTo: root.contentView.trailingAnchor, constant: -10),
+
+            root.firstImageView.topAnchor.constraint(equalTo: root.detailsLabel.bottomAnchor, constant: 10),
             root.firstImageView.leadingAnchor.constraint(equalTo: root.contentView.leadingAnchor, constant: 10),
             root.firstImageView.trailingAnchor.constraint(equalTo: root.contentView.trailingAnchor, constant: -10),
 

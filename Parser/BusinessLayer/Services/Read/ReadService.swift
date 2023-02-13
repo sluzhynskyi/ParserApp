@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReadService {
+struct JSONReadService: ReadService {
 
     // MARK: - Appearance
 
@@ -35,4 +35,9 @@ struct ReadService {
 
         return nil
     }
+}
+
+protocol ReadService {
+    func readLocalFile(forName name: String, ofType type: String) -> Data?
+    func loadJSON(of data: Data) -> [String]?
 }

@@ -15,18 +15,13 @@ final class AppCoordinator: Coordinator {
     init(
         navigationController: UINavigationController = NavigationViewController()
     ) {
-//        navigationController.setNavigationBarHidden(
-//            true,
-//            animated: false
-//        )
-
         self.navigationController = navigationController
     }
 
     func start() {
         let controller = HomeController(viewModel: HomeControllerViewModel(
-            readService: ReadService(),
-            parseService: ParseService()
+            readService: JSONReadService(),
+            parseService: JSONParseService()
         )).apply {
             $0.willShowPageAction = { [weak self] content in
                 self?.willOpenPageController(content)
@@ -37,10 +32,10 @@ final class AppCoordinator: Coordinator {
     }
 
     func willOpenPageController(_ content: ImagePage) {
-        var controller = PageViewController(
+        let controller = PageViewController(
             viewModel: PageViewControllerViewModel(
                 content: content,
-                downloadService: DownloadService()
+                downloadService: URLSessionDownloadService()
             )
         )
 

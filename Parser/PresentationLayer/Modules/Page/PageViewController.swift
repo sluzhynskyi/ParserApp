@@ -11,17 +11,7 @@ final class PageViewController: Controller<
     PageViewControllerLayout,
     PageViewControllerViewModel
 > {
-    // MARK: - Types
-
-    // MARK: - Types
-
-
-
     // MARK: - Properties
-    // MARK: Callbacks
-
-
-
     // MARK: Views
 
     private(set) lazy var scrollView = UIScrollView {
@@ -30,6 +20,23 @@ final class PageViewController: Controller<
 
     private(set) lazy var contentView = View {
         $0.translatesAutoresizingMaskIntoConstraints = false
+    }
+
+    private(set) lazy var titleLabel = UILabel {
+        $0.font = UIFont.systemFont(ofSize: 22)
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.textColor = ColorPalette.black
+        $0.textAlignment = .left
+        $0.numberOfLines = 0
+    }
+
+
+    private(set) lazy var detailsLabel = UILabel {
+        $0.font = UIFont.systemFont(ofSize: 14)
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.textColor = ColorPalette.black
+        $0.textAlignment = .left
+        $0.numberOfLines = 0
     }
 
     private(set) lazy var firstImageView = UIImageView {
@@ -65,6 +72,9 @@ final class PageViewController: Controller<
 
     override func configureView() {
         super.configureView()
+
+        titleLabel.text = viewModel.title()
+        detailsLabel.text = viewModel.details()
 
         guard let firstImageData = viewModel.firstImageData,
               let secondImageData = viewModel.secondImageData,

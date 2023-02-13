@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ParseService {
+struct JSONParseService: ParseService {
 
     // MARK: - Appearance
 
@@ -23,6 +23,7 @@ struct ParseService {
                 captures[keyWord] = match
             }
         }
+
         do {
             let JSONData = try JSONEncoder().encode(captures)
             let instance = try JSONDecoder().decode(T.self, from: JSONData)
@@ -47,4 +48,8 @@ struct ParseService {
 
 protocol Parsable: Decodable {
     static var allKeys: [String] { get }
+}
+
+protocol ParseService {
+    func parse<T: Parsable>(_: T.Type, from data: String) -> T?
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DownloadService {
+struct URLSessionDownloadService: DownloadService {
     func loadData(url: URL, completion: @escaping (Data?, Error?) -> Void) {
         let fileCachePath = FileManager.default.temporaryDirectory
             .appendingPathComponent(
@@ -54,4 +54,8 @@ struct DownloadService {
 
         task.resume()
     }
+}
+
+protocol DownloadService {
+    func loadData(url: URL, completion: @escaping (Data?, Error?) -> Void)
 }

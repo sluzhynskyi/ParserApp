@@ -19,6 +19,8 @@ final class PageViewControllerViewModel: ControllerViewModel {
     private var content: ImagePage
     private var downloadService: DownloadService
 
+    // MARK: - CallBacks
+
     private var updateFirstImageData: UpdateImageData?
     private var updateSecondImageData: UpdateImageData?
     private var updateThirdImageData: UpdateImageData?
@@ -50,6 +52,16 @@ final class PageViewControllerViewModel: ControllerViewModel {
 
     func configure() {
 
+    }
+
+    // MARK: - Appearance
+
+    func title() -> String {
+        content.title
+    }
+
+    func details() -> String {
+        content.details
     }
 
     func loadContent(loadedCallBack: @escaping EmptyClosure) {
