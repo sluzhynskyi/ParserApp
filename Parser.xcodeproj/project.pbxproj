@@ -31,8 +31,8 @@
 		15309A4B2995A8770096529F /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15309A382995A8770096529F /* Controller.swift */; };
 		15309A4C2995A8770096529F /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15309A3A2995A8770096529F /* ViewStyle.swift */; };
 		15309A4D2995A8770096529F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15309A3C2995A8770096529F /* View.swift */; };
+		1540883329ABA666005D6933 /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1540883229ABA666005D6933 /* ImagePage.swift */; };
 		15E5573E2995BDDD006D55AD /* task.json in Resources */ = {isa = PBXBuildFile; fileRef = 15E5573D2995BDDD006D55AD /* task.json */; };
-		15E557422995C04A006D55AD /* ImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E557412995C04A006D55AD /* ImagePage.swift */; };
 		15E557472995C513006D55AD /* ReadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E557462995C513006D55AD /* ReadService.swift */; };
 		15E5574E2995C972006D55AD /* ParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5574D2995C972006D55AD /* ParseService.swift */; };
 		15E5575129997776006D55AD /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5575029997776006D55AD /* TableViewProvider.swift */; };
@@ -79,8 +79,8 @@
 		15309A382995A8770096529F /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		15309A3A2995A8770096529F /* ViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		15309A3C2995A8770096529F /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1540883229ABA666005D6933 /* ImagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePage.swift; sourceTree = "<group>"; };
 		15E5573D2995BDDD006D55AD /* task.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = task.json; sourceTree = "<group>"; };
-		15E557412995C04A006D55AD /* ImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePage.swift; path = ../../../../../ImagePage.swift; sourceTree = "<group>"; };
 		15E557462995C513006D55AD /* ReadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadService.swift; sourceTree = "<group>"; };
 		15E5574D2995C972006D55AD /* ParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseService.swift; sourceTree = "<group>"; };
 		15E5575029997776006D55AD /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
@@ -351,7 +351,7 @@
 		15E557402995C018006D55AD /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				15E557412995C04A006D55AD /* ImagePage.swift */,
+				1540883229ABA666005D6933 /* ImagePage.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -578,6 +578,7 @@
 				15E5576D2999A00D006D55AD /* PageViewControllerViewModel.swift in Sources */,
 				15309A4B2995A8770096529F /* Controller.swift in Sources */,
 				15309A482995A8770096529F /* Control.swift in Sources */,
+				1540883329ABA666005D6933 /* ImagePage.swift in Sources */,
 				15E5575729997B28006D55AD /* TableViewCell.swift in Sources */,
 				15309A4C2995A8770096529F /* ViewStyle.swift in Sources */,
 				15E5576929999F69006D55AD /* PageViewController.swift in Sources */,
@@ -597,7 +598,6 @@
 				15309A112995A7660096529F /* Appyable.swift in Sources */,
 				15E5574E2995C972006D55AD /* ParseService.swift in Sources */,
 				15309A442995A8770096529F /* LayoutContentView.swift in Sources */,
-				15E557422995C04A006D55AD /* ImagePage.swift in Sources */,
 				15309A1A2995A80B0096529F /* Coordinator.swift in Sources */,
 				15E557722999A464006D55AD /* DownloadService.swift in Sources */,
 				15E5576B29999FC2006D55AD /* PageViewControllerLayout.swift in Sources */,
